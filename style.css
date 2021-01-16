@@ -1,0 +1,221 @@
+/* General Styling */
+*{
+    margin :0;
+    padding: 0;
+    box-sizing:border-box;
+    line-height: 1em;
+    font-family:"Josefin sans";
+}
+
+/* Navigation div style */
+.navigation{
+    position: fixed;
+    background-color:rgb(236, 231, 231);
+    height: 100vh;
+    width: 300px;
+    margin-left: -300px;
+    transition: 0.5s ease;
+}
+
+
+/* HamBurger Menu style */
+.bars{
+    margin: 1em;
+    position: fixed;
+    /* z-index: 2; */
+     cursor: pointer;
+}
+
+.bars div{
+    background-color:  rgb(224, 137, 70);
+    width: 50px;
+    height: 5px;
+    margin: 5px;
+    
+}
+
+.bars .bar1{
+    width: 60px;
+}
+
+.bars .bar3{
+    width: 40px;
+    height: 5px;
+}
+
+/* SideNav Style */
+.nav-items{
+    display: flex;
+    flex-direction:column;
+   
+}
+
+.nav-link{
+    list-style: none;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-items  :first-child{
+    margin-top: 2.5em;
+}
+
+.nav-link:last-child{
+    border-bottom: 0;
+}
+
+.nav-link a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase; 
+} 
+
+a:hover{
+    color : rgb(224, 137, 70);
+    transition: color 0.5s ease;
+}
+
+/* open side nav onClick */
+.open-nav{
+    margin-left: 0px;
+}
+
+/* Showcase Section style */
+.showcase{
+  background-image: linear-gradient(rgba(0,0,0,0.8),  rgba(0,0,0,0.8)), url(img/home-inside-3.jpg);
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto; 
+}  
+.showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.showcase-heading{
+    font-size: 4em;
+    color: #fff;
+    font-weight: 400;
+}
+
+.showcase-text{
+    margin: 1.5em;
+    font-weight: 200;
+    color: #fff;
+    font-size: 30px;
+}
+
+.showcase-content .btn{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(224, 137, 70);
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition:  border 1s ease;
+}
+
+
+.btn:hover{
+     background:none;
+     border: 1px solid rgb(224, 137, 70) ;
+     transition: 1s;
+}
+
+/* Media Queries */
+@media(max-width : 768px){
+    .showcase-heading{
+        font-size:3em;
+    }
+
+    .showcase-text{
+        font-size: 25px;
+    }
+
+    .showcase-content .btn{
+        padding: 15px;
+        font-size: 14px;
+    
+    }
+
+    .nav-link{
+        padding: 30px;
+    }
+    
+    .nav-items  :first-child{
+        margin-top: 3em;
+    }
+    
+    .nav-link a{
+        font-size: 16px;
+    } 
+
+    
+    .bars div{
+        background-color:  rgb(224, 137, 70);
+        width: 30px;
+        height: 5px;
+        margin: 5px;
+        
+    }
+
+    .bars .bar1{
+        width: 40px;
+    }
+
+    .bars .bar3{
+        width: 20px;
+        height: 5px;
+    }
+
+    
+    
+}
+
+
+@media(max-width:680px){
+    .showcase-heading{
+        font-size: 2.5em;
+    }
+
+    .showcase-text{
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width : 458px){
+    .showcase-heading{
+        font-size: 2em;
+    }
+
+    .showcase-text{
+        font-size: 20px;
+    }
+
+    .showcase-content .btn{
+        padding: 15px;
+        font-size: 14px;
+    
+    }
+    
+}
